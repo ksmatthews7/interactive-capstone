@@ -1,0 +1,198 @@
+@import "https://fonts.googleapis.com/css?family=Sintony";
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    z-index: 10;
+    width: 100px;
+    height: 100px;
+}
+
+#ball {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: bottom 0.5s ease-out;
+    display: none;
+}
+
+#ball.bounce {
+    bottom: 60px;
+}
+
+.wrapper {
+    z-index: -10;
+}
+
+body {
+    background: #222;
+    padding: 0;
+    margin: 0;
+    font-family: 'Sintony', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+header {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    letter-spacing: 4px;
+    overflow: hidden;
+    clip: rect(0, auto, auto, 0);
+    background-size: cover;
+    background-attachment: 50%;
+    background-repeat: no-repeat;
+}
+
+.section .fixed {
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    opacity: 0.85;
+    color: black;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 85%;
+    font-size: 0.9em;
+}
+
+.section p {
+    padding: .5rem;
+}
+
+.section:nth-child(1) {
+    background-color: #fff;
+    color: #000;
+    top: 0;
+    z-index: 1;
+}
+
+.section:nth-child(2) {
+    box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+    background-color: #c2850a;
+    color: #fff;
+    top: 100vh;
+    z-index: 2;
+}
+
+.section:nth-child(3) {
+    box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+    background-color: #0a0ac2;
+    color: #fff;
+    top: 200vh;
+    z-index: 3;
+}
+
+.section:nth-child(4) {
+    box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+    background-color: #85c20a;
+    color: #fff;
+    top: 300vh;
+    z-index: 4;
+}
+
+.section:nth-child(5) {
+    box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+    background-color: #850ac2;
+    color: #fff;
+    top: 400vh;
+    z-index: 5;
+}
+
+.section:nth-child(6) {
+    box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+    background-color: #0ac20a;
+    color: #fff;
+    top: 500vh;
+    z-index: 6;
+}
+
+.section:nth-child(7) {
+    box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+    background-color: #c20a85;
+    color: #fff;
+    top: 600vh;
+    z-index: 7;
+}
+
+.section:nth-child(8) {
+    box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+    background-color: #0ac285;
+    color: #fff;
+    top: 700vh;
+    z-index: 8;
+}
+
+.section:nth-child(9) {
+    box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+    background-color: #c20a0a;
+    color: #fff;
+    top: 800vh;
+    z-index: 9;
+}
+
+.section:nth-child(10) {
+    background-color: #000;
+    color: #fff;
+    top: 900vh;
+    z-index: 10;
+}
+
+.oop {
+    position: relative;
+    z-index: auto;
+    height: 10px;
+    background: linear-gradient(141deg, #48ded4 0%, #a026bf 51%, #e82c75 75%);
+}
+
+.video {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    #ball {
+        display: block;
+    }
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
